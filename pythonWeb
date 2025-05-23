@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja de Bolos Delícia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff8f2;
+      color: #333;
+    }
+
+    header {
+      background: #ffb347;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .produto {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+
+    .produto:hover {
+      transform: scale(1.05);
+    }
+
+    .produto img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    button {
+      background: #ff7f50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #e76e3c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f1f1f1;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍰 Loja de Bolos Delícia</h1>
+    <p>Os bolos mais gostosos da cidade!</p>
+  </header>
+
+  <section class="produtos">
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1601979031925-0328c77b59b2?auto=format&fit=crop&w=800&q=60" alt="Bolo de Chocolate">
+      <h3>Bolo de Chocolate</h3>
+      <p>R$ 29,90</p>
+      <button onclick="adicionarCarrinho('Bolo de Chocolate')">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1617191517000-4e472ef644c3?auto=format&fit=crop&w=800&q=60" alt="Bolo de Morango">
+      <h3>Bolo de Morango</h3>
+      <p>R$ 34,90</p>
+      <button onclick="adicionarCarrinho('Bolo de Morango')">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=800&q=60" alt="Bolo de Cenoura">
+      <h3>Bolo de Cenoura</h3>
+      <p>R$ 24,90</p>
+      <button onclick="adicionarCarrinho('Bolo de Cenoura')">Adicionar ao Carrinho</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Loja de Bolos Delícia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function adicionarCarrinho(produto) {
+      alert(`${produto} foi adicionado ao carrinho!`);
+    }
+  </script>
+</body>
+</html>
